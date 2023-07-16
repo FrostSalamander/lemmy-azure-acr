@@ -15,7 +15,7 @@ resource "azurerm_container_registry_task" "lemmy_caddy" {
   source_trigger {
     name           = "build-lemmy-caddy"
     events         = ["commit"]
-    repository_url = "https://github.com/timwebster9/docker-lemmy-caddy.git"
+    repository_url = "https://github.com/FrostSalamander/docker-lemmy-caddy.git"
     source_type    = "Github"
     branch         = "main"
 
