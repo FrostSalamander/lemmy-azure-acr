@@ -9,7 +9,7 @@ resource "azurerm_container_registry_task" "lemmy-ui" {
     dockerfile_path      = "Dockerfile"
     context_path         = "https://github.com/FrostSalamander/lemmy-ui#docker-debug"
     context_access_token = var.pat_token
-    image_names          = ["lemmy:{{.Run.ID}}"]
+    image_names          = ["lemmy-ui:{{.Run.ID}}"]
   }
 
   source_trigger {
